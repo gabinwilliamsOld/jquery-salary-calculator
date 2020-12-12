@@ -9,8 +9,82 @@
   <script src="client.js"></script>
   <title>Week1 Weekend Project</title>
 </head>
-<body class="container">
-  <h1>jQuery Salary Calculator</h1>
+<body>
+  <header class="jumbotron">
+    <h1>Salary Calculator</h1>
+  </header>
+  <main id="bodyContainer" class="container">
+
+<!-- INPUT SECTION WITH SUBMIT BUTTON     -->
+    <div class="row">
+      <div class="col">
+        <input id="firstIn" type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input id="lastIn" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+      <div class="col">
+        <input id="idIn" type="number" class="form-control" placeholder="ID" aria-label="ID">
+      </div>
+      <div class="col">
+        <input id="titleIn" type="text" class="form-control" placeholder="Title" aria-label="Title">
+      </div>
+      <div class="col">
+        <input id="salaryIn" type="number" class="form-control" placeholder="Salary" aria-label="Salary">
+      </div>
+    </div>
+    <button id="submitButton" type="submit" class="btn btn-outline-success" aria-placeholder="submit">Submit</button>
+    
+    <h2 class="employee">Employees</h2>
+
+    <!-- TABLE SECTION FOR EMPLOYEE INFORMATION -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Annual Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+    <h2 id="totalCost">TOTAL MONTHLY COST: $15,000</h2>
+   
+  </main>
+  
   
 </body>
 </html>
