@@ -33,8 +33,11 @@
         <input id="salaryIn" type="number" class="form-control" placeholder="Salary" aria-label="Salary">
       </div>
     </div>
-    <button id="submitButton" type="submit" class="btn btn-outline-success" aria-placeholder="submit">Submit</button>
-    
+  <div class="text-end">
+  <button id="submitButton" type="submit" class="btn btn-outline-success btn-sm text-end" 
+    aria-placeholder="submit">Submit</button>
+  </div>
+     
     <h2 class="employee">Employees</h2>
 
     <!-- TABLE SECTION FOR EMPLOYEE INFORMATION -->
@@ -46,42 +49,15 @@
           <th scope="col">ID</th>
           <th scope="col">Title</th>
           <th scope="col">Annual Salary</th>
+          <th scope="col"></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        
+      <!-- // this table is filled via jQuery and appending elements into it -->
+      <tbody id="employeeList">
       </tbody>
     </table>
     
-    <h2 id="totalCost">TOTAL MONTHLY COST: $15,000</h2>
+    <h2 id="total">TOTAL MONTHLY COST: $<span id="totalCost"></span></h2>
    
   </main>
   
