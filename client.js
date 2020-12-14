@@ -34,7 +34,10 @@ function readyHandle() {
     // makes sure count is equal to itself + 1 so every new obj has a different number identifier
     count += 1;
     // monthly cost is equal to itself + salary from input to the global variable
-    monthlyCost += Number($("#salaryIn").val());
+    let monthlySalary = $("#salaryIn").val();
+    monthlySalary = monthlySalary / 12;
+    console.log(monthlySalary);
+    monthlyCost += Number(monthlySalary);
   }
 
   function valueWork() {
@@ -72,9 +75,12 @@ function readyHandle() {
               <button type="button" data-index=${value.index} class="btn btn-outline-danger btn-sm delete">Delete</button>
             </td>
         </tr>`);
-
+      
+      
       //put on DOM
       $("#employeeList").append(employeeRow);
+
+      
     } // end for
   } // end renderToDom
 
